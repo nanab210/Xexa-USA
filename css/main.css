@@ -157,7 +157,7 @@ header .content-wrapper {
 }
 
 header nav {
-  width: 50%;
+  width: 40%;
   font-size: 1.125em;
   font-weight: 700;
   display: flex;
@@ -185,6 +185,7 @@ nav ul li a {
   margin: 10px -0.25em;
   padding: 10px 0.25em;
   transition: color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  text-decoration: none;
 }
 
 nav ul li a:hover {
@@ -200,20 +201,10 @@ nav ul li a:hover {
 }
 
 .picture img {
-  width: 50%;
+  width: 60%;
   border-radius: 50%;
   box-shadow: 1px 1px 5px #0a3161;
-  margin-top: 25px;
-}
-
-.picture {
-  position: relative;
-  top: 0;
-  transition: top ease 1s;
-}
-
-.picture :hover {
-  top: -10px;
+  margin-top: 60px;
 }
 
 .main {
@@ -222,6 +213,11 @@ nav ul li a:hover {
   align-items: center;
   flex-flow: row wrap;
   background-color: #0f4392;
+  color: whitesmoke;
+}
+
+.video iframe {
+  width: 100%;
 }
 
 /*------------ Footer ------------------*/
@@ -234,13 +230,15 @@ footer {
 
 footer .content-wrapper {
   width: 70%;
-  margin: 50px 0;
+  margin-top: 20px;
+  margin-bottom: 10px;
 }
 
 footer .social-icons {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  margin-top: 40px;
 }
 
 footer .social-icons p {
@@ -249,13 +247,18 @@ footer .social-icons p {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 40px;
-  height: 40px;
+  width: 60px;
+  height: 60px;
 }
 
 footer .social-icons p i {
-  font-size: 1.3125em;
+  font-size: 1.5em;
   color: #ffd9d9;
+}
+
+footer .copyright {
+  margin-top: 40px;
+  font-size: small;
 }
 
 /* ==========================================================================
@@ -358,6 +361,50 @@ footer .social-icons p i {
 }
 
 @media only screen and (min-width: 768px) {
+  /*------ General Styles ------*/
+
+  .content-wrapper {
+    max-width: 650px;
+    margin: 100px 0;
+  }
+
+  h1 {
+    font-size: 4em;
+  }
+
+  h2,
+  h3 {
+    font-size: 2em;
+  }
+
+  nav ul li a {
+    font-size: 1.125em;
+  }
+
+  /*Header*/
+
+  header {
+    padding: 10px;
+    justify-content: space-around;
+  }
+
+  header .content-wrapper {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  header nav {
+    width: 30%;
+    padding: 25px;
+  }
+
+  header nav ul {
+    justify-content: space-between;
+  }
+
+  .header-divider {
+    display: none;
+  }
 }
 
 @media only screen and (min-width: 1200px) {
