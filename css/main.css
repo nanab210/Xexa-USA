@@ -87,178 +87,130 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
-/*-------- Base Styles Mobile --------*/
-
-html,
-body {
-  margin: 0;
-}
+/*-------- Base Styles --------*/
 
 html {
   font-size: 16px;
 }
 
 body {
-  font-family: "Open sans", sans-serif;
-  font-size: 1em;
-  text-align: left;
-  color: #dd1717;
-  background-color: #0f4392;
+  font-family: "Open Sans", sans-serif;
+  color: navy;
+  background-color: #f4f7f5;
 }
 
 h1 {
-  font-family: "Poppins", sans-serif;
-  font-weight: 700;
-  font-size: 3em;
+  font-family: "Shadows Into Light", cursive;
+  font-size: 3.5em;
+  color: #ac0000;
 }
 
-h2,
+h2 {
+  font-family: "Shadows Into Light", cursive;
+  font-size: 2em;
+}
+
 h3 {
-  font-family: "Poppins", sans-serif;
-  font-weight: 500;
-  font-size: 1.5em;
-}
-
-img {
-  width: 100%;
+  font-family: "Shadows Into Light", cursive;
+  color: #f4f7f5;
 }
 
 ul,
 ol {
   list-style-type: none;
-}
-
-.content-wrapper {
-  width: 90%;
-  margin: 40px 0;
-}
-
-/*-------- Header and Footer Base Styles --------------*/
-
-header,
-footer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-flow: row wrap;
-  background-color: #000249;
-}
-
-header {
-  padding: 10px 0;
-}
-
-header .content-wrapper {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-flow: row wrap;
-  margin: 10px;
-}
-
-header nav {
-  width: 40%;
-  font-size: 1.125em;
-  font-weight: 700;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  flex-flow: row wrap;
-}
-
-header nav ul {
-  width: 100%;
-  display: flex;
-  justify-content: space-around;
-  padding: initial;
-  text-transform: uppercase;
-}
-
-.header-divider {
-  width: 100%;
   margin: 0;
+  padding: 0;
 }
 
-nav ul li a {
-  box-shadow: inset 0 0 0 0 #dd1717;
-  color: #dd1717;
-  margin: 10px -0.25em;
-  padding: 10px 0.25em;
-  transition: color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+a {
   text-decoration: none;
 }
 
-nav ul li a:hover {
-  box-shadow: inset 100px 0 0 0 #dd1717;
-  color: whitesmoke;
-}
-
-/*------------- Main Section -------------*/
-
-.picture {
+header,
+.main,
+.channel,
+footer {
   display: flex;
   justify-content: center;
+  text-align: center;
+  flex-flow: row wrap;
 }
 
-.picture img {
-  width: 60%;
-  border-radius: 50%;
-  box-shadow: 1px 1px 5px #0a3161;
-  margin-top: 60px;
+/*---Header---*/
+header {
+  padding-bottom: 40px;
+  background-color: #002566;
 }
+
+header a {
+  color: #f4f7f5;
+  text-transform: uppercase;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+header nav li {
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+/*---Main---*/
 
 .main {
-  display: flex;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+img {
+  width: 70%;
+  border-radius: 50%;
+}
+
+.main p {
+  text-align: left;
+}
+
+.main .content-wrapper {
+  width: 90%;
   justify-content: center;
-  align-items: center;
-  flex-flow: row wrap;
-  background-color: #0f4392;
-  color: whitesmoke;
 }
 
-.video iframe {
-  width: 100%;
+/*---Channel---*/
+
+.channel {
+  background-color: #c8d3e6;
+  padding-top: 40px;
+  padding-bottom: 40px;
 }
 
-/*------------ Footer ------------------*/
+iframe {
+  padding-bottom: 30px;
+}
+
+/*---Footer---*/
 
 footer {
-  text-align: center;
-  flex-direction: colunm;
-  text-transform: capitilize;
+  background-color: #002566;
+  color: #f4f7f5;
+  padding-top: 20px;
 }
 
-footer .content-wrapper {
-  width: 70%;
-  margin-top: 20px;
-  margin-bottom: 10px;
-}
-
-footer .social-icons {
+.social-icons {
   display: flex;
-  justify-content: space-around;
-  align-items: center;
-  margin-top: 40px;
+  justify-content: space-between;
 }
 
-footer .social-icons p {
-  background-color: #dd1717;
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 60px;
-  height: 60px;
+.social-icons i {
+  font-size: 2.5em;
+  color: #ac0000;
+  margin: 25px;
 }
 
-footer .social-icons p i {
-  font-size: 1.5em;
-  color: #ffd9d9;
-}
-
-footer .copyright {
-  margin-top: 40px;
-  font-size: small;
+.copyright {
+  font-size: 0.75em;
 }
 
 /* ==========================================================================
