@@ -190,6 +190,31 @@ iframe {
   padding-bottom: 30px;
 }
 
+button {
+  background: #002566;
+  border-radius: 999px;
+  box-shadow: #002566 0 10px 20px -10px;
+  box-sizing: border-box;
+  color: #ffffff;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  opacity: 1;
+  outline: 0 solid transparent;
+  padding: 8px 18px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: fit-content;
+  word-break: break-word;
+  border: 0;
+}
+
+a {
+  color: #f4f7f5;
+}
+
 /*---Footer---*/
 
 footer {
@@ -315,51 +340,26 @@ footer {
 @media only screen and (min-width: 768px) {
   /*------ General Styles ------*/
 
-  .content-wrapper {
-    max-width: 650px;
-    margin: 100px 0;
+  /*---Main---*/
+
+  .main {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+
+    padding-top: 80px;
+    padding-bottom: 80px;
+    width: 90%;
   }
 
-  h1 {
-    font-size: 4em;
+  img {
+    border-radius: 50%;
+    width: 50%;
   }
 
-  h2,
-  h3 {
-    font-size: 2em;
+  .main .content-wrapper {
+    width: 50%;
   }
-
-  nav ul li a {
-    font-size: 1.125em;
-  }
-
-  /*Header*/
-
-  header {
-    padding: 10px;
-    justify-content: space-around;
-  }
-
-  header .content-wrapper {
-    width: 100%;
-    justify-content: space-between;
-  }
-
-  header nav {
-    width: 30%;
-    padding: 25px;
-  }
-
-  header nav ul {
-    justify-content: space-between;
-  }
-
-  .header-divider {
-    display: none;
-  }
-}
-
-@media only screen and (min-width: 1200px) {
 }
 
 /* ==========================================================================

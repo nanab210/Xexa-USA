@@ -1,15 +1,13 @@
 # YouTube Channel Xexa USA
 
+---
+
 ## Overview
 
----
-
 This is a single page website design I created and coded for a YouTube channel.
-[You can check the channel here](https://www.youtube.com/@xexa)
+You can check the channel [here](https://www.youtube.com/@xexa)
 
 ## Features:
-
----
 
 - Responsive Design
 - HTML5
