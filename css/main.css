@@ -337,8 +337,23 @@ footer {
   /* Style adjustments for high resolution devices */
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 1200px) {
   /*------ General Styles ------*/
+
+  /*---Header---*/
+  header {
+    padding-bottom: 60px;
+  }
+
+  header .content-wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  header nav li {
+    padding-left: 30px;
+  }
 
   /*---Main---*/
 
