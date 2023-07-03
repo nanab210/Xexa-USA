@@ -113,6 +113,7 @@ h2 {
 h3 {
   font-family: "Shadows Into Light", cursive;
   color: #f4f7f5;
+  font-size: 1.625em;
 }
 
 ul,
@@ -137,9 +138,25 @@ footer {
 }
 
 /*---Header---*/
+
 header {
-  padding-bottom: 40px;
+  padding-top: 30px;
+  padding-bottom: 30px;
   background-color: #002566;
+}
+
+header nav ul li {
+  font-size: 0.925em;
+  margin-bottom: 10px;
+  font-weight: bolder;
+  text-transform: uppercase;
+}
+
+nav #contact-link {
+  background-color: #ac0000;
+  padding: 15px 15px;
+  border-radius: 999px;
+  color: #f4f7f5;
 }
 
 header a {
@@ -211,7 +228,7 @@ button {
   border: 0;
 }
 
-a {
+button a {
   color: #f4f7f5;
 }
 
@@ -220,22 +237,42 @@ a {
 footer {
   background-color: #002566;
   color: #f4f7f5;
-  padding-top: 20px;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
-.social-icons {
+footer ul {
+  width: 100%;
+}
+
+footer .social-icons {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
+  flex-flow: row wrap;
 }
 
-.social-icons i {
-  font-size: 2.5em;
-  color: #ac0000;
+footer .social-icons li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin: 25px;
+}
+
+footer .social-icons li i {
+  font-size: 2.5em;
+  padding-top: 30px;
+  color: #ac0000;
+}
+
+footer a {
+  color: white;
+  font-family: "Shadows Into Light", cursive;
+  text-transform: uppercase;
 }
 
 .copyright {
   font-size: 0.75em;
+  padding-top: 50px;
 }
 
 /* ==========================================================================
@@ -345,10 +382,10 @@ footer {
     padding-bottom: 60px;
   }
 
-  header .content-wrapper {
+  header nav {
     display: flex;
-    flex-direction: row;
-    align-items: center;
+    justify-content: flex-end;
+    width: 100%;
   }
 
   header nav li {
@@ -361,10 +398,9 @@ footer {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-
     padding-top: 80px;
     padding-bottom: 80px;
-    width: 90%;
+    width: 80%;
   }
 
   img {
@@ -374,6 +410,18 @@ footer {
 
   .main .content-wrapper {
     width: 50%;
+  }
+
+  /*--- Channel ----*/
+
+  .channel {
+    display: flex;
+  }
+
+  .videos {
+    display: flex;
+    flex-wrap: nowrap;
+    margin: 25px;
   }
 }
 
