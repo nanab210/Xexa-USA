@@ -373,56 +373,49 @@ footer a {
   (min-resolution: 120dpi) {
   /* Style adjustments for high resolution devices */
 }
-
-@media only screen and (min-width: 1200px) {
-  /*------ General Styles ------*/
+@media only screen and (min-width: 768px) {
+  /*---General Styles---*/
 
   /*---Header---*/
-  header {
-    padding-bottom: 60px;
+
+  header .content-wrapper {
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
   }
 
   header nav {
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
     width: 100%;
   }
 
-  header nav li {
-    padding-left: 30px;
+  header nav ul {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+  }
+
+  header {
+    padding-bottom: 70px;
   }
 
   /*---Main---*/
 
-  .main {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    padding-top: 80px;
-    padding-bottom: 80px;
-    width: 80%;
-  }
+  /*---Channel---*/
 
-  img {
-    border-radius: 50%;
-    width: 50%;
-  }
+  /*---Footer---*/
+}
+@media only screen and (min-width: 1200px) {
+  /*---General Styles---*/
 
-  .main .content-wrapper {
-    width: 50%;
-  }
+  /*---Header---*/
 
-  /*--- Channel ----*/
+  /*---Main---*/
 
-  .channel {
-    display: flex;
-  }
+  /*---Channel---*/
 
-  .videos {
-    display: flex;
-    flex-wrap: nowrap;
-    margin: 25px;
-  }
+  /*---Footer---*/
 }
 
 /* ==========================================================================
