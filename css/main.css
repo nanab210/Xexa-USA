@@ -139,10 +139,31 @@ footer {
 
 /*---Header---*/
 
+header .content-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
 header {
-  padding-top: 30px;
-  padding-bottom: 30px;
   background-color: #002566;
+  padding-bottom: 30px;
+}
+
+header nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+header nav ul {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  padding: initial;
 }
 
 header nav ul li {
@@ -164,16 +185,6 @@ header a {
   text-transform: uppercase;
 }
 
-nav ul {
-  display: flex;
-  justify-content: space-between;
-}
-
-header nav li {
-  padding-left: 25px;
-  padding-right: 25px;
-}
-
 /*---Main---*/
 
 .main {
@@ -184,6 +195,7 @@ header nav li {
 img {
   width: 70%;
   border-radius: 50%;
+  margin: 0;
 }
 
 .main p {
@@ -376,31 +388,46 @@ footer a {
 @media only screen and (min-width: 768px) {
   /*---General Styles---*/
 
+  h1 {
+    font-size: 4em;
+  }
+
   /*---Header---*/
 
+  header {
+    padding: 5px 0;
+    justify-content: space-around;
+  }
+
   header .content-wrapper {
-    display: flex;
-    justify-content: center;
-    flex-flow: row wrap;
+    width: 90%;
+    justify-content: space-between;
+  }
+
+  header .title {
+    width: 35%;
   }
 
   header nav {
-    display: flex;
-    justify-content: center;
-    width: 100%;
+    width: 40%;
   }
 
   header nav ul {
-    display: flex;
     justify-content: space-between;
-    width: 80%;
-  }
-
-  header {
-    padding-bottom: 70px;
   }
 
   /*---Main---*/
+
+  .main article {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  article .picture,
+  article .about {
+    width: 49%;
+  }
 
   /*---Channel---*/
 
